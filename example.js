@@ -1,9 +1,10 @@
 let DeltaBook = require("../DeltaBook");
 let Orderbooks = new DeltaBook.OrderBookStore(10)
 let symbol = "ETHUSDT"
-const ccxt = require('ccxt');
+//const ccxt = require('ccxt');
 const WebSocket = require('ws');
 
+/*
 const ccxtClient = new ccxt.binance({
     urls :{
       api: { 
@@ -21,13 +22,14 @@ async function getOBRestSnapshot(client, symbol) {
     let ob = await client.fetchOrderBook(symbol);
     return ob;
 }
+*/
 
 
 async function main() {
     console.time("OrderbookLoop")
 
-    let ob = await getOBRestSnapshot(ccxtClient, symbol.replace('USDT', '/USDT'));
-    console.log(ob);
+    //let ob = await getOBRestSnapshot(ccxtClient, symbol.replace('USDT', '/USDT'));
+    //console.log(ob);
 
     symbol = 'ETHUSDT'.toLowerCase();
     const ws = new WebSocket('wss://fstream.binance.com/stream');

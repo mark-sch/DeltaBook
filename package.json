@@ -1,6 +1,6 @@
 {
   "name": "DeltaBook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Manage orderbooks for cryptocurrency exchanges with websocket connections",
   "scripts": {
     "start": "node example.js",
@@ -20,8 +20,5 @@
   ],
   "devDependencies": {
     "jest": "^25.1.0"
-  },
-  "dependencies": {
-    "ccxt": "^1.22.40"
   }
 }
