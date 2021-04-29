@@ -19,6 +19,10 @@
     "websockets"
   ],
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^25.5.4"
+  },
+  "dependencies": {
+    "15": "0.0.0",
+    "yargs": "^16.2.0"
   }
 }
